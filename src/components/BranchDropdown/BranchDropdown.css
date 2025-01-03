@@ -1,0 +1,56 @@
+.branch-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .branch-label {
+    color: #0099ff;
+    font-size: 14px;
+  }
+  
+  .branch-select {
+    position: relative;
+    width: 200px;
+  }
+  
+  .selected-branch {
+    padding: 8px 12px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-top: 2px;
+    z-index: 1000;
+  }
+  
+  .option {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background: #f5f5f5;
+  }
+  
+  .option.active {
+    background: #e6f7ff;
+  }

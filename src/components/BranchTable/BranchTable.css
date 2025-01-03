@@ -1,0 +1,184 @@
+.branch-table-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.branch-container {
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 75%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.branch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.branch-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.view-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-button {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.icon-button:hover {
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+.search-bar {
+  display: flex;
+
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-button {
+  padding: 0.5rem;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+}
+
+.search-input-container {
+  border: 0px;
+  border: 0px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  width: 65vw;
+}
+
+.table-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #f9fafb;
+}
+
+th {
+  padding: 0.75rem 1rem;
+  
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: blue;
+  border-bottom: 1px solid #e5e7eb;
+  
+}
+
+td {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.rows-per-page select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.page-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.page-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.page-buttons button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.page-buttons button:disabled {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* For material icons */
+.material-icons {
+  font-size: 1.25rem;
+  line-height: 1;
+}

@@ -1,0 +1,117 @@
+/* Sidebar Styles */
+.sidebar {
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 20%;
+  background-color: #ffffff; /* White background */
+  height: 100vh; /* Full height */
+  padding: 16px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 5px;
+  align-self: self-start;
+}
+
+/* Logo Section */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.logo-image {
+  width: 170px; /* Adjust size */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Dark gray text */
+}
+
+/* Navigation Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.arrow-icon {
+  margin-left: 15px;
+  margin-top: 7px;
+}
+
+.menu-item {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.submenu {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.submenu-item {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0; /* Light gray hover effect */
+  color: #007bff; /* Blue text on hover */
+}
+
+.menu-icon {
+  margin-right: 12px; /* Space between icon and text */
+  font-size: 20px;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Take full width */
+    height: auto; /* Adjust height */
+  }
+
+  .menu-item {
+    justify-content: center; /* Center items */
+    text-align: center;
+  }
+
+  .menu-icon {
+    margin-right: 0; /* No space for icons */
+  }
+}
